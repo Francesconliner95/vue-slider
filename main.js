@@ -32,11 +32,13 @@ var app = new Vue({
             this.index = indice;
         }
     },
+    /*'l'oggetto' created: ci permette di eseguire al suo interno pozioni di codice in maniera automatica*/
     created: function() {
-		setInterval(function() {
+        /*la funzione setInterval ci permette di eseguire una porzione di codice ogni tot tempo*/
+		setInterval(()=> {
         console.log('avanti');
-        this.next_f;
+        this.next_f();
         }, 5000);
-	}
+	},
 
 })
