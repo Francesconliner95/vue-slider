@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="root">
+
+            <!-- <h1>{{messaggio}}</h1>
+            <img :class="espressione" :src="indirizzo" alt="">
+            <button @click="smile" type="button" name="button">Cambia</button> -->
+            <div class="cont">
+                <div class="prev">
+                    <i @click="prev_f" class="fas fa-angle-left fa-3x"></i>
+                </div>
+                <div class="slide">
+                    <img :src="immagini[index]" :alt="testo">
+                </div>
+                <div class="next">
+                    <i @click="next_f" class="fas fa-angle-right fa-3x"></i>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
