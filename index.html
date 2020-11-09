@@ -24,6 +24,12 @@
                 <div class="next">
                     <i @click="next_f" class="fas fa-angle-right fa-3x"></i>
                 </div>
+                <div class="pallini">
+                    <span v-for="(pallino, indice) in immagini"
+                    v-bind:class="indice == index ? 'active' : null"
+                    @click="set_img(indice)"></span>
+                    <!-- al click passiamo il valore indice dello span corrente attraverso la funzione -->
+                </div>
             </div>
         </div>
 
